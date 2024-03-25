@@ -83,6 +83,24 @@ We provide four settings for augmented GCG.
 
 > Notice that for multiple queries settings, we only save the suffixes with the lowest loss at each step, which is different from the individual query setting of saving all available sampled candidates at each step.
 
+For individual query and multiple queries settings, we save the potential suffixes with the key `step_cands` and `controls` respectively. Specifically, the suffixes with in `controls` are the instances optimized over all training queries. For the suffixes under individual setting, we save them as the format
+```
+query:
+    ...,
+
+    step_N-1:[
+        control: <suffix>,
+        loss: <loss>
+    ],
+
+    step_N:[
+        control: <suffix>,
+        loss: <loss>
+    ],
+
+    ...
+```
+
 For more details on optimizing over different models and setups, please refer to the [GCG repo](https://github.com/llm-attacks/llm-attacks/tree/main)
 
 ### Evaluation
