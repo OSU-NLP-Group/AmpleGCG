@@ -98,7 +98,6 @@ bash evaluate_augmentedGCG.sh
 
 You can easily swap to other victim models and the generation configs of victim models under `myconfig/target_lm` by utilizing [hydra](https://hydra.cc/docs/intro/).
 
-target_lm
 
 After obtaining the content from victim models, you could detect the harmfulness of them by running:
 
