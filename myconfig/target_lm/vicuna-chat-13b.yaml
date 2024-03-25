@@ -1,0 +1,13 @@
+model_name: lmsys/vicuna-13b-v1.5
+show_name: vicuna-13b-chat-v1.5
+batch_size: 8
+torch_dtype: bf16
+template: "{system_message}USER: {input} {prompt} ASSISTANT:"
+system_message: "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user's questions. "
+ppl_template: "{input} {prompt}"
+generation_configs:
+  do_sample: false
+  max_new_tokens: 60
+  num_return_sequences: 1
+  top_p: null
+  top_k: null

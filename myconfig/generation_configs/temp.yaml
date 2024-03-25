@@ -1,0 +1,7 @@
+generation_configs:
+  do_sample: true
+  max_new_tokens: 20
+  min_new_tokens: 20
+  num_return_sequences: 1
+  temperature: 3.0
+  name: temp

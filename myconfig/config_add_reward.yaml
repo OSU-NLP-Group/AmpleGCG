@@ -1,0 +1,27 @@
+hydra:
+  output_subdir: null
+  run:
+    # current dir when you read this file..
+    dir: ./
+
+
+defaults:
+  # # reward_lm: ???
+  - reward_lm: gpt4-0613
+
+
+# path: null
+path: ???
+batch_size: 64
+
+
+# only reward the instances that are classified as harmful before
+only_prev_harms:
+  - beaver
+  - harmbench
+
+# if instances are rewarded by one of [only_prev_harms] before, will force to redo the reward
+force_replace: false
+
+
+

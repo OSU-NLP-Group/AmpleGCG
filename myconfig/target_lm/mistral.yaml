@@ -1,0 +1,14 @@
+model_name: mistralai/Mistral-7B-v0.1
+show_name: Mistral-7B-v0.1
+batch_size: 8
+torch_dtype: bf16
+template: "{input} {prompt}"
+system_message: null
+ppl_template: "{input} {prompt}"
+
+generation_configs:
+  do_sample: false
+  max_new_tokens: 60
+  num_return_sequences: 1
+  top_p: null
+  top_k: null

@@ -1,0 +1,15 @@
+model_name: deepseek-ai/deepseek-llm-7b-chat
+show_name: deepseek-llm-7b-chat
+batch_size: 8
+torch_dtype: bf16
+
+template: "User: {system_message}{input} {prompt}\n\nAssistant:"
+system_message: ""
+ppl_template: "{input} {prompt}"
+
+generation_configs:
+  do_sample: false
+  max_new_tokens: 60
+  num_return_sequences: 1
+  top_p: null
+  top_k: null

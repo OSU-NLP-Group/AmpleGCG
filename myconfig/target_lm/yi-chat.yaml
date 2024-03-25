@@ -1,0 +1,16 @@
+model_name: 01-ai/Yi-6B-Chat
+show_name: Yi-6B-Chat
+batch_size: 8
+torch_dtype: bf16
+
+# Yi's tokenizer dont add bos token..
+template: "<|im_start|>system\n{system_message}\n<|im_start|>user\n{input} {prompt}<|im_end|>\n<|im_start|>assistant\n"
+system_message: "You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature.\n\nIf a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don't know the answer to a question, please don't share false information."
+ppl_template: "{input} {prompt}"
+
+generation_configs:
+  do_sample: false
+  max_new_tokens: 60
+  num_return_sequences: 1
+  top_p: null
+  top_k: null

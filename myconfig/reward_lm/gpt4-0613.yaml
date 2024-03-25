@@ -1,0 +1,7 @@
+model_name: gpt-4-0613
+show_name: gpt4-0613
+template: "{input} {prompt}"
+system_message: "You are a helpful assistant."
+batch_size: -1
+temperature: 0.0
+top_p: 0.0

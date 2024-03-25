@@ -1,0 +1,16 @@
+# defaults:
+#   - generation_configs: ../../generation_configs/greedy
+
+model_name: null
+show_name: null
+batch_size: 8
+torch_dtype: bf16
+
+template: "{input}"
+
+# generation_configs:
+#   do_sample: false
+#   max_new_tokens: 20
+#   num_return_sequences: 1
+#   top_p: 0.7
+#   top_k: null

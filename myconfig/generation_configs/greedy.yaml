@@ -1,0 +1,8 @@
+generation_configs:
+  do_sample: false
+  max_new_tokens: 20
+  min_new_tokens: 20
+  num_return_sequences: 1
+  top_p: null
+  top_k: null
+  name: greedy

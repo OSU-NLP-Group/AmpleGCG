@@ -1,0 +1,5 @@
+model_name: "cais/HarmBench-Llama-2-13b-cls"
+show_name: "harmbench-13b"
+template: "path:myconfig/reward_lm/harmbench.json"
+batch_size: 8
+torch_dtype: bf16

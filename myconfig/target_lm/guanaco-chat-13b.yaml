@@ -1,0 +1,15 @@
+model_name: TheBloke/guanaco-13B-HF
+show_name: guanaco-13b-chat
+batch_size: 8
+torch_dtype: bf16
+template: "{system_message}### Human: {input} {prompt}\n### Assistant:"
+system_message: "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user's questions.\n"
+ppl_template: "{input} {prompt}"
+generation_configs:
+  do_sample: false
+  max_new_tokens: 60
+  num_return_sequences: 1
+  top_p: null
+  top_k: null
+
+

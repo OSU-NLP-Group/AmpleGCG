@@ -1,0 +1,14 @@
+model_name: mistralai/Mistral-7B-Instruct-v0.1
+show_name: Mistral-7B-Instruct-v0.1
+batch_size: 8
+torch_dtype: bf16
+
+template: "[INST]{system_message}\n{input} {prompt} [/INST]"
+system_message: "You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature.\n\nIf a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don't know the answer to a question, please don't share false information.\n"
+ppl_template: "{input} {prompt}"
+generation_configs:
+  do_sample: false
+  max_new_tokens: 60
+  num_return_sequences: 1
+  top_p: null
+  top_k: null
