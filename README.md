@@ -32,13 +32,13 @@ attacking Llama-2-7B-Chat), rendering it more challenging to defend
 
 ## Setup
 
-'''bash
+```bash
 conda create --name AmpleGCG python=3.11.4
 
 conda activate AmpleGCG
 
 pip install -r requirements.txt
-'''
+```
 
 ## Experiments
 
@@ -47,38 +47,39 @@ pip install -r requirements.txt
 Augmented GCG simply extends GCG by overgenerating the suffixes candidates during the optimizations.
 To obtain the suffixes with augmented GCG under either individual query or multi queries settings, please first:
 
-'''bash
+```bash
 cd llmattack/experiments/launch_scripts
-'''
+```
 
 We provide four settings for augmented GCG.
+<a name="individual-query"></a>
 1. Individual Query
 
     1.1 Individual Model
 
-    '''bash
+    ```bash
     bash run_overgenerate_indiv_query_indiv_model_llama2-chat.sh
-    '''
+    ```
 
     1.2 Multiple Models
 
-    '''bash
+    ```bash
     bash run_overgenerate_indiv_query_multi_models_llama2-chat_vicuna.sh
-    '''
+    ```
 
 2. Multiple Queries
 
     2.1 Individual Model
 
-    '''bash
+    ```bash
     bash run_overgenerate_mutli_queries_indiv_model.sh
-    '''
+    ```
 
     2.2 Multiple Models
 
-    '''bash
+    ```bash
     bash run_overgenerate_mutli_queries_multi_models_vicuna7_13b_guanaco_7_13b.sh
-    '''
+    ```
 
 > Notice that for multiple queries settings, we only save the suffixes with the lowest loss at each step, which is different from the individual query setting of saving all available sampled candidates at each step.
 
@@ -90,7 +91,7 @@ We provide a modularized and flexible pipeline to evaluate the
 reward them
 
 ### AmpleGCG
-Due to considered ethical issues, we don't directly release the models themselves. However, researchers could train AmpleGCG-like adversarial suffixes generator based on the data collected from [individual query settings](###AugmentedGCG). For more details, please refer to the [paper](arxivlink) for more details on the *overgenerate-then-filter* pipeline.
+Due to considered ethical issues, we don't directly release the models themselves. However, researchers could train AmpleGCG-like adversarial suffixes generator based on the data collected from [individual query settings](#individual-query). For more details, please refer to the [paper](arxivlink) for more details on the *overgenerate-then-filter* pipeline.
 
 
 
