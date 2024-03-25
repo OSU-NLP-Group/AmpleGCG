@@ -90,7 +90,7 @@ We provide a modularized and flexible pipeline to evaluate the different victim 
 
 Take the multiple queries settings for an example.
 
-If you have gotten the results from the augmented GCG above, you need to first depopulate the generated suffixes and place them under the `myconfig/prompt_own_list.json` with the key (e.g. **llama2_lowest** or **llama2_lowest_at_each_step** corresponding to default GCG (only the suffixes with lowest loss) and Overgenerate + X under multiple queries setting). Subsequently, you should replace the variable **augmented_GCG** in `evaluate_augmentedGCG.sh` with your defined keys and run
+If you have gotten the results from the augmented GCG above, you need to first depopulate the generated suffixes and place them under the `myconfig/prompt_own_list.json` with the key (e.g. **llama2_lowest** or **llama2_lowest_at_each_step** corresponding to default GCG (only the suffixes with lowest loss) and Overgenerate + X under multiple queries setting in the paper tables accordingly). Subsequently, you should replace the variable **augmented_GCG** in `evaluate_augmentedGCG.sh` with your defined keys and run
 ```bash
 cd ../../..
 bash evaluate_augmentedGCG.sh
