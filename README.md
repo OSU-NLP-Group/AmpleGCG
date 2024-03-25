@@ -44,14 +44,14 @@ pip install -r requirements.txt
 
 ### Augmented GCG
 
-Augmented GCG simply extends GCG by overgenerating the suffixes candidates during the optimizations.
+Augmented GCG simply extends GCG by overgenerating the suffix candidates during the optimizations.
 To obtain the suffixes with augmented GCG under either individual query or multi queries settings, please first:
 
 ```bash
 cd llmattack/experiments/launch_scripts
 ```
 
-We provide four settings for augmented GCG.
+We provide the scripts for four settings of augmented GCG.
 <a name="individual-query"></a>
 1. Individual Query
 
@@ -83,7 +83,7 @@ We provide four settings for augmented GCG.
 
 > Notice that for multiple queries settings, we only save the suffixes with the lowest loss at each step, which is different from the individual query setting of saving all available sampled candidates at each step.
 
-For individual query and multiple queries settings, we save the potential suffixes with the key `step_cands` and `controls` respectively. Specifically, the suffixes with in `controls` are the instances optimized over all training queries. For the suffixes under individual setting, we save them as the format
+For individual query and multiple queries settings, we save the potential suffixes with the key `step_cands` and `controls` respectively. Specifically, the suffixes within `controls` are the instances optimized over all training queries. For the suffixes under individual setting, we save them as the format
 ```
 query:
     ...,
