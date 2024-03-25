@@ -10,7 +10,7 @@ We believe in responsible disclosure and the ethical use of AI technologies.  Ho
 Access to the data is granted on a provisional basis and is subject to the sole discretion of the authors. The authors reserve the right to deny or restrict access to the data to any individual or entity at any time, without notice and without liability.
 
 ## Introduction
-**TL;DR** We further amplify the effectiveness of GCG on higher ASR, broader coverage of vulnerabilities and higher efficiency.
+**TL;DR** We further amplify the effectiveness of GCG, achieving increased ASR, more comprehensive identification of vulnerabilities, and improved efficiency across both open-source and closed-source models.
 
 As large language models (LLMs) become increasingly prevalent and integrated into autonomous systems, ensuring their safety is imperative.
 Despite significant strides toward safety alignment, recent work GCG (Zou
