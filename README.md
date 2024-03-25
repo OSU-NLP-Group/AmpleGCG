@@ -86,54 +86,32 @@ We provide four settings for augmented GCG.
 For more details on optimizing over different models and setups, please refer to the [GCG repo](https://github.com/llm-attacks/llm-attacks/tree/main)
 
 ### Evaluation
-We provide a modularized and flexible pipeline to evaluate the 
+We provide a modularized and flexible pipeline to evaluate the different victim models.
 
-reward them
+```bash
+cd ../../..
+bash evaluate_augmentedGCG.sh
+```
+
+After obtaining the content from victim models, you could detect the harmfulness of them by running:
+
+```bash
+bash add_reward.sh sequence
+```
+which would utilize [Beavor-Cost](https://huggingface.co/PKU-Alignment/beaver-7b-v1.0-cost) to label the instances first and sequentially leverage [HarmBench Classifier](https://huggingface.co/cais/HarmBench-Llama-2-13b-cls) to only evaluate the instances that are deemed harmful by Beaver-Cost.
+
+You could use a more advanced GPT4 evaluator by
+```bash
+bash add_reward.sh gpt4
+```
+
 
 ### AmpleGCG
-Due to considered ethical issues, we don't directly release the models themselves. However, researchers could train AmpleGCG-like adversarial suffixes generator based on the data collected from [individual query settings](#individual-query). For more details, please refer to the [paper](arxivlink) for more details on the *overgenerate-then-filter* pipeline.
+Due to considered ethical issues, we don't directly release the models themselves. However, researchers could train AmpleGCG-like adversarial suffixes generator based on the data collected from [individual query settings](#individual-query). For more details, please refer to the [paper](arxivlink) about the *overgenerate-then-filter* pipeline for collecting training data of either individual model or multiple models.
 
-
+We could evaluate your trained generator in `evaluate_augmentedGCG.sh` as well once you obtain your own generator. You could further explore different settings of generation config for your generator in `myconfig/generation_configs` as we exemplified that different decoding approaches would affect the diversity and quality of the suffixes
 
 
 ### Citation
 
 ### License
-
-
-for multiple , you can deduplicate and then place those suffixes in the ...
-
-
-
-I should only present how the overgenerate from multiple queries could be utlized for evaluate the victim models. I want to ditch the manymany individual queries.
-
-
-I should say that you could use the results for individual queriesy to (instruction tuning) tot train ample GCG.
-
-We would not release ampleGCG ...
-
-
-I should test my new code from stratch.
-
-I should create a new env and use fastchat version in my requirement.txt...
-
-
-**I should keep this README**
-
-**I should keep this README**
-
-**I should keep this README**
-
-**I should keep this README**
-
-**I should keep this README**
-
-**I should keep this READMEI should keep this README**
-
-**I should keep this README**
-
-**I should keep this README**
-
-**I should keep this README**
-
-**I should keep this README**
