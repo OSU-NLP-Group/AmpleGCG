@@ -80,7 +80,7 @@ We provide the scripts for four settings of augmented GCG.
     ```bash
     bash run_overgenerate_mutli_queries_multi_models_vicuna7_13b_guanaco_7_13b.sh
     ```
-
+> [!IMPORTANT]
 > Notice that for multiple queries settings, we only save the suffixes with the lowest loss at each step, which is different from the individual query setting of saving all available sampled candidates at each step.
 
 For individual query and multiple queries settings, we save the potential suffixes with the key `step_cands` and `controls` respectively. Specifically, the suffixes within `controls` are the instances optimized over all training queries. For the suffixes under individual setting, we save them as the format
