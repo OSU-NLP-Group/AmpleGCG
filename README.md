@@ -140,7 +140,16 @@ We could evaluate your trained generator in `evaluate_augmentedGCG.sh` as well o
 
 
 ### Citation
-TODO
+```bash
+@misc{liao2024amplegcg,
+      title={AmpleGCG: Learning a Universal and Transferable Generative Model of Adversarial Suffixes for Jailbreaking Both Open and Closed LLMs}, 
+      author={Zeyi Liao and Huan Sun},
+      year={2024},
+      eprint={2404.07921},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
 
 ### License
 TODO
