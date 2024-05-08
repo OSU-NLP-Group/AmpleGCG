@@ -17,8 +17,8 @@ data_args:
   split: null
 
 prompter_lm:
-  model_name: /research/nfs_sun_397/liao.629/why_attack/ckpt/prompter_vicuna_ckpt_llama2-base_q_r_p
-  show_name: prompter_vicuna_ckpt_llama2-base_q_r_p
+  model_name: None
+  show_name: None
 
 ppl: false
 batch_size: 16
