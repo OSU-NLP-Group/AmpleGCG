@@ -1,9 +1,8 @@
 # AmpleGCG: Learning a Universal and Transferable Generator of Adversarial Attacks on Both Open and Closed LLM
 This is the official repo of AmpleGCG ([https://arxiv.org/abs/2404.07921](https://arxiv.org/abs/2404.07921)). Please kindly 🌟star🌟 it and cite our paper 📜 if you find them useful.
 
-<a href="https://github.com/OSU-NLP-Group/AmpleGCG?tab=readme-ov-file" target="_blank">
-  <img src="https://img.shields.io/badge/AmpleGCG-black?style=flat&logo=python&logoColor=rgb" alt="AmpleGCG Badge">
-</a>
+![Static Badge](https://img.shields.io/badge/AmpleGCG-black?style=flat&logo=python&logoColor=rgb&link=https%3A%2F%2Fgithub.com%2FOSU-NLP-Group%2FAmpleGCG%3Ftab%3Dreadme-ov-file)
+
 
 ## Reproducibility and Codes
 This repository hosts the source code of **Augmented GCG**, which extends the capabilities of GCG by overgenerating samples alongside the GCG optimizations. Our work builds upon the foundational [GCG](https://github.com/llm-attacks/llm-attacks) work, and we express our deep appreciation for their open-source release.
