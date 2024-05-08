@@ -139,12 +139,12 @@ bash add_reward.sh gpt4
 
 
 ### AmpleGCG
-Due to considered ethical issues, we don't directly release the models themselves. However, researchers could train AmpleGCG-like adversarial suffixes generator based on the data collected from [individual query settings](#individual-query). For more details, please refer to the [paper](arxivlink) about the *overgenerate-then-filter* pipeline for collecting training data of either individual model or multiple models and the figure below.
+Due to considered ethical issues, we don't publicly release the models in the wild. However, researchers could access to three different versions of AmpleGCG via 🤗 [AmpleGCG-series models](https://huggingface.co/osunlp/AmpleGCG-llama2-sourced-llama2-7b-chat) or train your own AmpleGCG-like adversarial suffixes generator based on the data collected from [individual query settings](#individual-query). For more details of training, please refer to the [paper](arxivlink) about the *overgenerate-then-filter* pipeline for collecting training data of either individual model or multiple models and the figure below.
 
 ![figure below](pipeline.png "overgenerate-then-filter")
 
 
-We could evaluate your trained generator in `evaluate_augmentedGCG.sh` as well once you obtain your own generator. You could further explore different settings of generation config for your generator in `myconfig/generation_configs` as we exemplified that different decoding approaches would affect the diversity and quality of the suffixes
+You could evaluate your trained generator in `evaluate_augmentedGCG.sh` as well once you obtain your own generator. You could further explore different settings of generation config for your generator in `myconfig/generation_configs` as we exemplified that different decoding approaches would affect the diversity and quality of the suffixes
 
 
 ### Citation
