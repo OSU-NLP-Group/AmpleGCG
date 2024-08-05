@@ -16,7 +16,7 @@ We are excited to announce the release of **AmpleGCG-plus**, an enhanced version
 
 2. **Enhanced Data Quantity**: Instead of sampling 200 suffixes for each query, **AmpleGCG-plus** now utilizes all available collected training pairs.
 
-Given that, we've developed two specialized versions of **AmpleGCG-plus**, tailored for Llama-2-chat and GPT-series models with more details in 🤗 [**AmpleGCG-plus**]([#model-descriptions](https://huggingface.co/osunlp/AmpleGCG-plus-llama2-sourced-llama2-7b-chat)).
+Given that, we've developed two specialized versions of **AmpleGCG-plus**, tailored for Llama-2-chat and GPT-series models with more details in 🤗 [**AmpleGCG-plus**](https://huggingface.co/osunlp/AmpleGCG-plus-llama2-sourced-llama2-7b-chat).
 
 Both AmpleGCG-**plus** variants demonstrate superior performance compared to the original AmpleGCG when evaluated on AdvBench.
 
