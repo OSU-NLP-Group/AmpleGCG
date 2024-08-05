@@ -5,6 +5,27 @@ This is the official repo of AmpleGCG ([https://arxiv.org/abs/2404.07921](https:
   <img src="https://img.shields.io/badge/AmpleGCG-black?style=flat&logo=python&logoColor=rgb" alt="AmpleGCG Badge">
 </a>
 
+
+## 🚨Updates🚨
+
+- August 1st, 2024: Release of **AmpleGCG-plus**
+
+We are excited to announce the release of **AmpleGCG-plus**, an enhanced version of AmpleGCG designed to produce customized GCG suffixes. This upgrade introduces two significant improvements:
+
+1. **Enhanced Data Quality**: We've utilized a more effective and cost-efficient evaluator, harmbench-cls, in our OTF pipeline to collect higher-quality training datasets.
+
+2. **Enhanced Data Quantity**: Instead of sampling 200 suffixes for each query, **AmpleGCG-plus** now utilizes all available collected training pairs.
+
+Given that, we've developed two specialized versions of **AmpleGCG-plus**, tailored for Llama-2-chat and GPT-series models with more details in [Model Descriptions](#model-descriptions).
+
+Both AmpleGCG-**plus** variants demonstrate superior performance compared to the original AmpleGCG when evaluated on AdvBench.
+
+- July 20th: Acceptance to COLM
+
+We are thrilled to anounce that our [paper](https://arxiv.org/abs/2404.07921) is accepted at [COLM 2024](https://colmweb.org/)
+
+---
+
 ## Reproducibility and Codes
 This repository hosts the source code of **Augmented GCG**, which extends the capabilities of GCG by overgenerating samples alongside the GCG optimizations. Our work builds upon the foundational [GCG](https://github.com/llm-attacks/llm-attacks) work, and we express our deep appreciation for their open-source release.
 
