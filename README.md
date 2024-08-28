@@ -9,7 +9,7 @@ This is the official repo of AmpleGCG ([https://arxiv.org/abs/2404.07921](https:
 ## 🚨Updates🚨
 - August 27th: 2024: Release of our extensive collection of **millions** of suffixes generated through GCG, along with their corresponding evaluation results.
 
-In light of the importance of building trustworthy AI systems that should be robust in both **natural** and **gibberish** language spaces, we have decided to release the raw datasets that are used to develop AmpleGCG and AmpleGCG-plus series of models to better contribute to the community. For more reasons why we believe these gibberish suffixes are important, please check the [Tweet Thread](https://x.com/LiaoZeyi/status/1828613837756490112) here. Please apply for it at [here](https://huggingface.co/osunlp/AmpleGCG-llama2-sourced-llama2-7b-chat#request-for-datasets).
+  In light of the importance of building trustworthy AI systems that should be robust in both **natural** and **gibberish** language spaces, we have decided to release the raw datasets that are used to develop AmpleGCG and AmpleGCG-plus series of models to better contribute to the community. For more reasons why we believe these gibberish suffixes are important, please check the [Tweet Thread](https://x.com/LiaoZeyi/status/1828613837756490112) here. Please apply for it at [here](https://huggingface.co/osunlp/AmpleGCG-llama2-sourced-llama2-7b-chat#request-for-datasets).
 
 - August 1st, 2024: Release of **AmpleGCG-plus**
 
