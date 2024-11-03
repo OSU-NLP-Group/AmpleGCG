@@ -184,4 +184,10 @@ You could evaluate your trained generator in `evaluate_augmentedGCG.sh` as well 
   journal={arXiv preprint arXiv:2404.07921},
   year={2024}
 }
+@article{kumar2024amplegcg,
+  title={AmpleGCG-Plus: A Strong Generative Model of Adversarial Suffixes to Jailbreak LLMs with Higher Success Rates in Fewer Attempts},
+  author={Kumar, Vishal and Liao, Zeyi and Jones, Jaylen and Sun, Huan},
+  journal={arXiv preprint arXiv:2410.22143},
+  year={2024}
+}
 ```
