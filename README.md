@@ -1,5 +1,5 @@
 # AmpleGCG: Learning a Universal and Transferable Generator of Adversarial Attacks on Both Open and Closed LLM
-This is the official repo of AmpleGCG ([https://arxiv.org/abs/2404.07921](https://arxiv.org/abs/2404.07921)) and AmpleGCG-plus (https://arxiv.org/abs/2410.22143)[https://arxiv.org/abs/2410.22143]. Please kindly 🌟star🌟 this repo and cite our papers 📜 if you find them useful!
+This is the official repo of AmpleGCG ([https://arxiv.org/abs/2404.07921](https://arxiv.org/abs/2404.07921)) and AmpleGCG-plus ([https://arxiv.org/abs/2410.22143](https://arxiv.org/abs/2410.22143)). Please kindly 🌟star🌟 this repo and cite our papers 📜 if you find them useful!
 
 <a href="https://github.com/OSU-NLP-Group/AmpleGCG?tab=readme-ov-file" target="_blank">
   <img src="https://img.shields.io/badge/AmpleGCG-black?style=flat&logo=python&logoColor=rgb" alt="AmpleGCG Badge">
